@@ -1,0 +1,44 @@
+/* Reset any inherited styles */
+.editor-content {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Maximum specificity for text sizes */
+html body .editor-content span.text-small {
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+html body .editor-content span.text-normal {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+html body .editor-content span.text-large {
+  font-size: 20px !important;
+  line-height: 28px !important;
+}
+
+/* Debug outlines */
+html body .editor-content span[class^="text-"] {
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Color variables */
+:root {
+  --red-100: #fee2e2;
+  --red-500: #ef4444;
+  --green-100: #dcfce7;
+  --green-500: #22c55e;
+  --blue-100: #dbeafe;
+  --blue-500: #3b82f6;
+  --yellow-100: #fef9c3;
+  --yellow-500: #eab308;
+  --purple-100: #f3e8ff;
+  --purple-500: #a855f7;
+  --slate-100: #f1f5f9;
+  --slate-500: #64748b;
+}
+

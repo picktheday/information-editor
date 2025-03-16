@@ -1,0 +1,38 @@
+[contenteditable="true"] {
+  outline: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+[contenteditable="true"] ul {
+  list-style-type: disc;
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+[contenteditable="true"] ol {
+  list-style-type: decimal;
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+[contenteditable="true"] li {
+  margin: 0.25em 0;
+  position: relative;
+}
+
+[contenteditable="true"] ul > li::marker,
+[contenteditable="true"] ol > li::marker {
+  color: #666;
+}
+
+[contenteditable="true"] p {
+  margin: 0.5em 0;
+}
+
+[contenteditable="true"]:empty::before {
+  content: attr(placeholder);
+  color: #666;
+  pointer-events: none;
+}
+
